@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header input[type="search"] {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+header input[type="submit"] {
+  padding: 10px 20px;
+  background: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header input[type="submit"]:hover {
+  background: blueviolet;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.current-weather {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+
+.current-weather div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: large;
+}
+
+.current-weather h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.current-weather p {
+  font-size: 1.1em;
+}
+footer {
+  color: grey;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+div.temp {
+  font-size: 50px;
+}
+.weather-info {
+  color: red;
+}
+.current-weather {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.current-temperature {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.current-temperature-icon {
+  margin-right: 10px;
+  position: relative;
+}
+
+.current-temperature-value {
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.current-temperature-unit {
+  font-size: 40px;
+  position: relative;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: beige;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

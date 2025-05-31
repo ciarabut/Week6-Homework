@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My Weather Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            id="city-input"
+            placeholder="Enter a city name"
+            required
+            class="search-input"
+            aria-label="City name input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h2 class="current-city" id="city-name">Tipperary Town</h2>
+            <p id="weather-details">
+              <span id="current-date-time"></span>,
+              <span id="weather-description"></span><br />
+              Humidity: <strong class="weather-info" id="humidity">--</strong>,
+              Wind:
+              <strong class="weather-info" id="wind-speed">--</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-value" id="temperature">--</span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+        <p id="loading" style="display: none">Loading...</p>
+        <!-- Added loading indicator -->
+      </main>
+      <footer>
+        <p>This project was coded by Kee Butler with 💜</p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
